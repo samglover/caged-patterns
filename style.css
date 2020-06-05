@@ -77,7 +77,7 @@ body {
   border-top-width: 10px;
   box-sizing: border-box;
   display: grid;
-  grid-template-rows: repeat( 5, 1fr );
+  grid-template-rows: repeat( 6, 1fr );
 }
 
   .fret {
@@ -109,7 +109,7 @@ body {
 
       .circle {
         align-self: center;
-        background: #ddd;
+        background-color: #ddd;
         border: 5px solid black;
         border-radius: 50%;
         box-sizing: border-box;
@@ -118,10 +118,27 @@ body {
         z-index: 10;
       }
 
+      .root {
+        background-color: black;
+      }
+
       .circle:after {
         content: '';
         display: block;
         padding-bottom: 100%;
+      }
+
+      .root .R {
+        color: white;
+        display: grid;
+        font-size: 150%;
+        font-weight: bold;
+        position: absolute;
+          left: 0;
+          top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+        width: 100%;
       }
 
     .string {
